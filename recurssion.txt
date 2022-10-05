@@ -1,0 +1,12 @@
+public class Main
+{
+    static void printNos(int n){
+        if(n>0){
+            printNos(n-1);
+            System.out.println(n+ " ");
+        }
+    }
+	public static void main(String[] args) {
+		printNos(1000);
+	}
+}

@@ -1,0 +1,63 @@
+// Using spread Operators//
+// arr1 = [1,2,3];
+// arr2 = [4,5,6];
+
+// // let merge = [...arr1,...arr2];
+// // console.log(merge);
+
+//using for loop
+// arr1 = [1,2,3];
+// arr2 = [4,5,6];
+// arr3 = [7,8,9];
+// for(let i=0;i<arr2.length;i++){
+//   arr1.push(arr2[i]);
+//   for(let j=i;j<arr3.length-(i*2);j++){
+//       arr2.push(arr3[j]);
+//   }
+  
+// }
+// console.log(arr1);
+
+//using function
+// function merge(a,b,c,d){
+//     for(let i=0;i<b.length;i++){
+//         a.push(b[i]);
+//         for(let j=i;j<c.length-(i*2);j++){
+//             b.push(c[j]);
+//         }
+        
+//     }
+//     console.log([...a,...d])
+// }
+// merge([1,2,3],[4,5,6],[7,8,9],[10,11,12]);
+// merge(merge([1,2,3], [4,5,6]), [7,8,9]);
+// const merge = (first, second) => {
+//   for(let i=0; i<second.length; i++) {
+//     first.push(second[i]);
+//   }
+//   return first;
+// }
+// const arr1 = ["Cecilie", "Lone"];
+// const arr2 = ["Emil", "Tobias", "Linus"];
+// const arr3 = ["Robin"];
+// const arr4 = [1,2,3,4,5,6];
+
+// let merge= arr1.concat(arr2,arr3,arr4);
+// console.log(merge);
+
+// const object ={
+//     name: 'kashish',
+//     address: 'garli',
+//     education:'masters'
+// }
+// function getKey(obj,value){
+//     return Object.keys(object).find(key => object[key] === value);
+
+// }
+// console.log(getKey(object,'garli'));
+
+
+
+
+
+

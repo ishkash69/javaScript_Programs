@@ -1,0 +1,15 @@
+function armstrong(num){
+    let sum = 0;
+    let temp=num;
+    while(temp>0){
+        let remainder= (temp%10);
+        sum= sum+(remainder*remainder*remainder);
+        temp = parseInt(temp/10);
+    }
+    if(sum==num){
+        console.log("number is armstrong");
+    }else{
+        console.log("number is not armstrong")
+    }
+}
+armstrong(371);
