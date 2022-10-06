@@ -85,21 +85,21 @@ const updateStudent=(value)=>{
             ]
 console.log('before updating',studentDetails)
 
-            // let check=0;
+            let check=0;
             for(let object of studentDetails){
                 if(object.rollno===value){
                     object.name='mohan';
                     object.address='jhkjhkjhk'
-                    // check=
+                    check=1
                     
                 }
-                // else if(check===0){
-                //     console.log('no data found')
-                // }
+                else if(check===0){
+                    console.log('no data found')
+                }
             
             }
             console.log('after Updating')
             return studentDetails
 }
 
-console.log(updateStudent(1));
+console.log(updateStudent(5));
