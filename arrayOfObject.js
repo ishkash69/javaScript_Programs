@@ -1,34 +1,34 @@
 
 
-// const deletingStudents=(value)=>{
-//     let studentDetails =[
-//         {
-//             name: 'rahul',
-//             rollno:1,
-//             address:'House No.1'
-//         },
-//         {
-//             name: 'prem',
-//             rollno:2,
-//             address:'House No.2'
-//         },
-//         {
-//             name: 'jkjk',
-//             rollno:3,
-//             address:'House No.3'
-//         },
+const deletingStudents = (value) => {
+    let studentDetails = [
+        {
+            name: 'rahul',
+            rollno: 1,
+            address: 'House No.1'
+        },
+        {
+            name: 'prem',
+            rollno: 2,
+            address: 'House No.2'
+        },
+        {
+            name: 'jkjk',
+            rollno: 3,
+            address: 'House No.3'
+        },
 
-//     ]
-// 
-//     for(let i=0;i<studentDetails.length;i++){
-//         if(studentDetails[i].rollno==value){
-//             studentDetails.splice(i,1)
-//             
-//         }
-//     }
-//     return studentDetails
-// }
-// console.log(deletingStudents(1))
+    ]
+
+    for (let i = 0; i < studentDetails.length; i++) {
+        if (studentDetails[i].rollno == value) {
+            studentDetails.splice(i, 1)
+            return studentDetails
+        }
+    }
+    return 'no data found'
+}
+console.log(deletingStudents(99))
 
 
 // const addNewStudent = ()=>{
@@ -64,37 +64,37 @@
 
 // updating student object
 
-const updateStudent = (value) => {
-    let studentDetails = [
-        {
-            name: 'rahul',
-            rollno: 1,
-            address: 'House No.1'
-        },
-        {
-            name: 'prem',
-            rollno: 2,
-            address: 'House No.2'
-        },
-        {
-            name: 'jkjk',
-            rollno: 3,
-            address: 'House No.3'
-        },
+// const updateStudent = (value) => {
+//     let studentDetails = [
+//         {
+//             name: 'rahul',
+//             rollno: 1,
+//             address: 'House No.1'
+//         },
+//         {
+//             name: 'prem',
+//             rollno: 2,
+//             address: 'House No.2'
+//         },
+//         {
+//             name: 'jkjk',
+//             rollno: 3,
+//             address: 'House No.3'
+//         },
 
-    ]
-    console.log('before updating', studentDetails)
+//     ]
+//     console.log('before updating', studentDetails)
 
 
-    for (let object of studentDetails) {
-        if (object.rollno === value) {
-            object.name = 'mohan';
-            object.address = 'jhkjhkjhk'
-            console.log('after Updating')
-            return studentDetails
-        }
-    }
-    return 'no data found'
-}
+//     for (let object of studentDetails) {
+//         if (object.rollno === value) {
+//             object.name = 'mohan';
+//             object.address = 'jhkjhkjhk'
+//             console.log('after Updating')
+//             return studentDetails
+//         }
+//     }
+//     return 'no data found'
+// }
 
-console.log(updateStudent(3));
+// console.log(updateStudent(5));

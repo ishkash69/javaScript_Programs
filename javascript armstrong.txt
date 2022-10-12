@@ -6,7 +6,7 @@ function armstrong(num){
         sum= sum+(remainder*remainder*remainder);
         temp = parseInt(temp/10);
     }
-    if(sum==num){
+    if(sum===num){
         console.log("number is armstrong");
     }else{
         console.log("number is not armstrong")

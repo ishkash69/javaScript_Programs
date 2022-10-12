@@ -3,33 +3,37 @@
 //     let password =[];
 //     let arrLength = arr.length
 //     for (let i = 0;i<length;i++){
-//         let convert = arr.toString();
-//          password += convert.charAt(Math.floor(Math.random()*arrLength )) ;
-         
+//         // let convert = arr.toString();
+
+//         //  password += convert.charAt(Math.floor(Math.random()*arrLength )) ;
+//       let random=  Math.floor(Math.random()*arrLength)
+//       password += arr[random]
+
 //     }
 //     return password;
-// }
+// } 
 // console.log(gString(6));    
 
-let arr = [1,2,3,4,5,6];
-// function removeItem( value){
-// let removed = arr.filter(item=> {
-//     return item!=value
-// })
-//     return removed 
-// }
-// let result = removeItem(1)
-// console.log(result)
+let arr = [1, 2, 3, 4, 5, 6];
+// // function removeItem( value){
+// // let removed = arr.filter(item=> {
+// //     return item!=value
+// // })
+// //     return removed 
+// // }
+// // let result = removeItem(1)
+// // console.log(result)
 
-const removeItem =(value)=>{
-    for (let i=0;i<arr.length;i++){
-        if (arr[i]===value){
-            arr.splice(i,1);
-        }
+const removeItem = (value) => {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === value) {
+      arr.splice(i, 1);
+      return arr
     }
-    console.log(arr)
+  }
+  return "no data found"
 }
-console.log(removeItem(6))
+console.log(removeItem(9))
 
 
 
